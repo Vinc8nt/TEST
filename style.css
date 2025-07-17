@@ -1,178 +1,57 @@
-/* Reset and base */
-html, body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f0f0;
-  scroll-behavior: smooth;
-  min-width: 320px;
-}
-
-.content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-  background-color: #400000;
   color: #fff;
-  width: 300px;
-  padding: 20px;
-  position: fixed;
-  height: 100vh;
-  overflow-y: auto;
 }
 
-.logo-section {
+/* Background container with image slot */
+.welcome-container {
+  height: 100vh;
+  background: url('Images/your-background.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+/* Overlay for shading and content contrast */
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text and button centered */
+.content {
   text-align: center;
+}
+
+.content h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
-.logo {
-  width: 80px;
-  margin-bottom: 10px;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-list a {
+.enter-button {
+  padding: 14px 28px;
+  background-color: #a00000;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  display: block;
-  padding: 8px;
-  transition: all 0.2s ease;
-}
-
-.nav-list a:hover {
-  background-color: #660000;
-  padding-left: 12px;
-}
-
-.dropdown-menu {
-  display: none;
-  list-style: none;
-  padding-left: 15px;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #ff1a1a;
-  color: #fff;
-  padding-left: 12px;
-  transition: background 0.2s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Main */
-main {
-  margin-left: 300px;
-  padding: 40px 20px;
-}
-
-/* Welcome Section */
-.welcome-section {
-  background-color: #a00000;
-  color: white;
-  padding: 60px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.cta-button {
-  background: #fff;
-  color: #a00000;
-  padding: 10px 20px;
   font-weight: bold;
   border-radius: 6px;
-  text-decoration: none;
   transition: background 0.3s ease;
-  display: inline-block;
-  margin-top: 20px;
 }
 
-.cta-button:hover {
-  background: #ffcccb;
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 40px 20px;
-  margin-top: 60px;
-}
-
-.footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.footer-columns div {
-  margin: 10px;
-  max-width: 250px;
-}
-
-.footer-columns h3 {
-  margin-bottom: 10px;
-}
-
-.footer-columns ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-columns a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.footer-columns a:hover {
-  color: #ffcccb;
-  text-decoration: underline;
-}
-
-.footer-logo img {
-  width: 80px;
-}
-
-.motto {
-  margin-top: 15px;
-  font-style: italic;
-  color: #ffcccb;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-  }
-
-  main {
-    margin-left: 0;
-  }
-
-  .footer-columns {
-    flex-direction: column;
-    align-items: center;
-  }
+.enter-button:hover {
+  background-color: #ff1a1a;
 }
