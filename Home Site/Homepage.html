@@ -2,105 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MSIT | CCIS - PUP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSIT Home Page</title>
   <link rel="stylesheet" href="home.css" />
 </head>
 <body>
   <aside class="sidebar">
     <div class="logo-section">
-      <img src="logo.png" alt="CCIS Logo" class="logo" />
-      <h1>College of Computer and Information Sciences</h1>
-      <h2>Master of Science in Information Technology</h2>
+      <img src="logo.png" alt="PUP Logo" class="logo" />
+      <h2>Graduate School</h2>
+      <h3>Master of Science in Information Technology</h3>
     </div>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="Home Site/Homepage.html">Home</a></li>
-	<li class="dropdown">
-        	<a href="general.html">General Info</a>
-		<ul class="dropdown-menu">
-			<li><a href="#">About</a></li>
-                        <li><a href="#">History</a></li>
-		</ul>
-	</li>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#intro">Home</a></li>
         <li class="dropdown">
-                    <a href="#">Facilities</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Labs</a></li>
-                        <li><a href="#">Library</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Certifications</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Partners</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Faculty</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Professors</a></li>
-                        <li><a href="#">Staff</a></li>
-                    </ul>
-                </li>
-            </ul>
+          <a href="#">General Info</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Facilities</a>
+          <ul class="dropdown-menu">
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="library.html">Library</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Certifications</a>
+          <ul class="dropdown-menu">
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="partners.html">Partners</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Faculty</a>
+          <ul class="dropdown-menu">
+            <li><a href="professors.html">Professors</a></li>
+            <li><a href="staff.html">Staff</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </aside>
 
   <main>
-    <header class="intro">
-      <h1>Welcome to MSIT</h1>
-      <p>MSIT equips students with advanced skills in IT, research, and professional growth...</p>
-      <a href="#course-info">Read More</a>
-    </header>
+    <div class="content-wrapper">
+      <section id="intro" class="intro-section">
+        <h1>Welcome to MSIT</h1>
+        <p>The MSIT program at PUP Graduate School offers world-class education for future tech innovators, system designers, and IT researchers.</p>
+        <a href="#course-details" class="read-more">Read More</a>
+      </section>
 
-    <section id="course-info">
-      <h2>Course Overview</h2>
-      <p>Detailed description of MSIT program, its goals, curriculum structure, and benefits.</p>
-    </section>
+      <section id="course-details" class="course-section">
+        <h2>Program Overview</h2>
+        <p>The Master of Science in Information Technology (MSIT) provides advanced knowledge in IT infrastructure, cybersecurity, data science, and agile development. Designed for both working professionals and full-time students, this program blends research with industry application.</p>
+      </section>
 
-    <section id="staff">
-      <h2>Key Staff Members</h2>
-      <ul>
-        <li>Dr. Jane Doe – Program Chair – janedoe@pup.edu.ph</li>
-        <li>Prof. John Smith – Coordinator – johnsmith@pup.edu.ph</li>
-      </ul>
-    </section>
-
-    <section id="motto">
-      <blockquote>“Innovate. Integrate. Inspire.”</blockquote>
-    </section>
-
-<footer>
-  <div class="footer-container">
-    <!-- Left Column: Online Services -->
-    <div class="footer-column left">
-      <h3>Online Services</h3>
-      <ul>
-        <li><a href="https://sis2.pup.edu.ph/student/" target="_blank">SIS for Students</a></li>
-        <li><a href="https://sis2.pup.edu.ph/faculty/" target="_blank">SIS for Faculty</a></li>
-        <li><a href="https://iapply.pup.edu.ph/signin" target="_blank">PUP iApply</a></li>
-        <li><a href="https://pupsinta.freshservice.com/support/home" target="_blank">PUP SINTA</a></li>
-        <li><a href="https://login.microsoftonline.com/" target="_blank">PUP WebMail</a></li>
-      </ul>
+      <section class="staff-section">
+        <h2>Key Staff Members</h2>
+        <ul>
+          <li>🎓 Dr. Jane Doe – Program Chair – <a href="mailto:jdoe@pup.edu.ph">jdoe@pup.edu.ph</a></li>
+          <li>👨‍💻 Prof. John Smith – Curriculum Coordinator – <a href="mailto:jsmith@pup.edu.ph">jsmith@pup.edu.ph</a></li>
+          <li>📧 Ms. Clara Reyes – Admin Support – <a href="mailto:creyes@pup.edu.ph">creyes@pup.edu.ph</a></li>
+        </ul>
+      </section>
     </div>
 
-    <!-- Right Column: Socials -->
-    <div class="footer-column right">
-      <h3>Connect With Us</h3>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Email Us</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-logo">
-    <a href="index.html"><img src="logo.png" alt="PUP Logo" /></a>
-  </div>
-</footer>
-
+    <footer id="footer">
+      <div class="footer-columns">
+        <div class="footer-nav">
+          <h3>PUP Services</h3>
+          <ul>
+            	<li><a href="https://sis2.pup.edu.ph/student/" target="_blank">SIS for Students</a></li>
+        	<li><a href="https://sis2.pup.edu.ph/faculty/" target="_blank">SIS for Faculty</a></li>
+       	 	<li><a href="https://iapply.pup.edu.ph/signin" target="_blank">PUP iApply</a></li>
+        	<li><a href="https://pupsinta.freshservice.com/support/home" target="_blank">PUP SINTA</a></li>
+        	<li><a href="https://login.microsoftonline.com/" target="_blank">PUP WebMail</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h3>Site Menu</h3>
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#">General Info</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Faculty</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h3>Connect With Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+          <p class="motto">“Innovate. Integrate. Inspire.”</p>
+        </div>
+        <div class="footer-logo">
+          <a href="#"><img src="logo.png" alt="PUP Logo" /></a>
+        </div>
+      </div>
+    </footer>
   </main>
+
+  <script src="home.js"></script>
 </body>
 </html>
