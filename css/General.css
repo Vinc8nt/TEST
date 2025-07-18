@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.page-header {
+  background-color: #a00000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.info-section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.info-section h2 {
+  color: #a00000;
+  margin-bottom: 10px;
+}
+
+.facilities-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.facility {
+  display: inline-block;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.facility img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.facility p {
+  margin-top: 10px;
+  font-weight: bold;
+}
