@@ -13,7 +13,7 @@ body, html {
 /* Background container with image slot */
 .welcome-container {
   height: 100vh;
-  background: url('Images/your-background.jpg') no-repeat center center/cover;
+  background: url('Images/sample.jpg') no-repeat center center/cover;
   position: relative;
 }
 
