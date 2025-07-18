@@ -44,3 +44,70 @@ body, html {
   margin-top: 10px;
   font-weight: bold;
 }
+
+/* Sidebar */
+.sidebar {
+  background-color: #400000;
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: #660000;
+  padding-left: 12px;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ff1a1a;
+  color: #fff;
+  padding-left: 12px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
