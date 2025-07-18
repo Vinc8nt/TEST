@@ -17,7 +17,7 @@ body, html {
   position: relative;
 }
 
-/* Overlay for shading and content contrast */
+/* Overlay for shading and content contrast
 .overlay {
   background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
   height: 100%;
